@@ -1,0 +1,43 @@
+.transparent-background {
+    padding: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-image: url("../img/backgrounds/transparent-bg-2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0px;
+    background-position: center center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+// Adding acolor overlay to the background
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darken(#FD4B46, 10%);
+    opacity: .3;
+}
+
+.blockquote {
+        border-bottom: 1px solid @white-title;
+        border-top: 1px solid @white-title;
+
+    p {
+        font-size: 38px;
+        text-shadow: 1px 1px 1px #333;
+        color: @white-title;
+
+        @media screen and (max-width: 480px) {
+          font-size: 28px;
+        }
+    }
+}
+.blockquote-footer {
+    text-align: right;
+    font-size: 1.25em;
+    color: darken(@white-title, 15%);
+}

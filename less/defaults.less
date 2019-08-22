@@ -1,0 +1,60 @@
+// General styles
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.25;
+}
+.centered {
+    text-align: center;
+    width: 100%;
+}
+.white-text {
+    color: @white-title;
+}
+.bold {
+  font-weight: 700;
+}
+.text-accent {
+  color: @accent-color;
+  font-weight: 500;
+    
+    &:hover {
+        color: darken(@accent-color, 20%);
+    }
+}
+
+// Section Styles
+.section {
+    padding: 70px 0 0 0;
+    position: relative;
+}
+
+
+// About Styles
+
+.about {
+    padding: 50px 0;
+    background-color: #eee;
+    border-top: 1px solid darken(@white-title, 10%);
+    
+    .about_inner {
+        padding: 10px;
+        background: @true-white;
+        margin: 10px 0;
+        .about-info {
+            padding: 10px;
+
+            p {
+            font-size: 18px;
+            line-height: 1.75em;
+            padding: 10px;
+            }
+            h3 {
+                margin-top: 0 !important;
+                padding: 0 10px;
+            }
+        }    
+    }
+} 
+
+
+

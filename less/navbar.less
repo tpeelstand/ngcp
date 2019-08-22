@@ -1,0 +1,100 @@
+
+.navbar {
+    background: rgba(255, 255, 255, .9);
+}
+.navbar.navbar-transparent {
+    padding-top: 0;
+}
+
+// change the icon position
+.navbar.fixed-top .nav-link i {
+  top: 0;
+}
+// change the Logo color if text
+.navbar-transparent .navbar-brand, [class*="bg"] .navbar-brand {
+    color: @black-title;
+#FD4B46
+    &:hover {
+        color: @black-title;
+    }
+}
+
+
+// Change the icon and nav link
+.navbar-transparent .navbar-nav .nav-item .nav-link:not(.btn), [class*="bg"] .navbar-nav .nav-item .nav-link:not(.btn) {
+    color: @black-title;
+    border-bottom: 2px solid transparent;
+    &:hover {
+        border-bottom: 2px solid @accent-color;
+    }
+}
+
+// adjusting the padding of the brand
+.navbar .navbar-brand {
+    padding: 10px 15px;
+    opacity: 1;
+    &:hover {
+        color: @black-title;
+    }
+
+    .logo-text {
+
+      img {
+        width: 100%;
+        max-width: 175px;
+        position: absolute;
+        top: 10px;
+        // Transition the shrinking effect to make is smoother!
+        webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+      .shrink {
+        width: 100%;
+        max-width: 100px;
+        position: relative;
+        top: 0;
+      }
+    }
+
+    .camera-icon {
+
+        i {
+            font-size: 36px;
+        }
+    }
+}
+
+// Changes color on the hamburger menu
+.navbar[class*="bg-"] .navbar-toggler .navbar-toggler-bar, .navbar.navbar-transparent .navbar-toggler .navbar-toggler-bar {
+    background: @black-title;
+}
+// For when the bar is fixed while scrolling
+.navbar .navbar-nav .nav-item .nav-link {
+    color: @black-title;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        border-bottom: 2px solid @accent-color;
+    }
+}
+// Adjusting the mobile hamburger display
+
+.icon {
+    font-size: 2em;
+    .nav-link {
+        border: 2px solid transparent !important;
+    }
+    .facebook {
+        &:hover {
+            color:#3B5998 !important;
+        }
+    }
+    .instagram {
+        &:hover {
+            color:#E12F67 !important;
+        }
+    }
+}
