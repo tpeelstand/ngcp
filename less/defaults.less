@@ -10,51 +10,35 @@ html, body {
 .white-text {
     color: @white-title;
 }
+.section {
+    padding: 70px 0 0 0;
+}
+.about {
+    padding: 50px 0;
+    background-color: #eee;
+    border-top: 1px solid darken(@white-title, 10%);
+    .about-info {
+        padding: 10px;
+        background: @true-white;
+        border: 4px solid @white-title;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+        p {
+        font-size: 18px;
+        line-height: 1.75em;
+        padding: 0 0 10px 0;
+        }
+        h3 {
+            margin-top: 0 !important;
+            padding: 5px 0;
+        }
+    }
+    
+}
 .bold {
   font-weight: 700;
 }
 .text-accent {
   color: @accent-color;
   font-weight: 500;
-    
-    &:hover {
-        color: darken(@accent-color, 20%);
-    }
 }
-
-// Section Styles
-.section {
-    padding: 70px 0 0 0;
-    position: relative;
-}
-
-
-// About Styles
-
-.about {
-    padding: 50px 0;
-    background-color: #eee;
-    border-top: 1px solid darken(@white-title, 10%);
-    
-    .about_inner {
-        padding: 10px;
-        background: @true-white;
-        margin: 10px 0;
-        .about-info {
-            padding: 10px;
-
-            p {
-            font-size: 18px;
-            line-height: 1.75em;
-            padding: 10px;
-            }
-            h3 {
-                margin-top: 0 !important;
-                padding: 0 10px;
-            }
-        }    
-    }
-} 
-
-
-

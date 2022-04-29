@@ -1,84 +1,18 @@
 .footer {
-    background-color: @footer-background;
-
-    .footer-nav {
-        width: 100%;
-        padding: 20px 0;
-    }
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        li {
-            padding: 0;
-            margin: 0;
-            line-height: 24px;
-            a {
-                padding: 5px;
-                margin: 0;
-
-                @media screen and (max-width: 414px) {
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-
-    .footer_left-nav {
-        width: 80%;
-        float: left;
-
-        @media screen and (max-width: 414px) {
-            width: 100%;
-            float: none !important;
-        }
-        li {
-            float: left;
-            padding: 5px;
-
-            @media screen and (max-width: 414px) {
-                float: none !important;
-                text-align: center;
-            }
-        }
-    }
-
-    .footer_right-nav {
-        width: 20%;
-        float: left;
-        @media screen and (max-width: 414px) {
-            width: 100%;
-            float: none;
-        }
-        li {
-            float: right;
-            padding: 5px;
-            @media screen and (max-width: 414px) {
-                width: 100%;
-                float: none;
-                text-align:center;
-            }
-
-            i {
-                font-size: 1.5em;
-            }
-        }
-    }
-
-    // Copyright
-    .copyright {
-        color: @white-title !important;
-    }
-    .credits {
-        width: 100%;
-    }
+  background: darken(@accent-color, 25%);
+  .footer-nav {
     a {
-        color: @white-title !important;
-
-        &:hover {
-            color: @true-white;
-        }
+      color: @true-white !important;
+      text-shadow: 1px 1px 1px #555;
+      font-weight: normal;
     }
-
+  }
+  .copyright {
+    color: @true-white !important;
+    text-shadow: 1px 1px 1px #555;
+    a {
+      color: @true-white !important;
+      text-shadow: 1px 1px 1px #555;
+    }
+  }
 }

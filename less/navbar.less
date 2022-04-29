@@ -1,7 +1,13 @@
-
-.navbar {
-    background: rgba(255, 255, 255, .9);
+// Updates to logo Area
+.top-logo {
+  line-height: 1.15em;
+  border-bottom: 1px solid #a7a7a7;
 }
+.bottom-logo {
+  font-size: 1.22em;
+  color: darken(@accent-color, 25%);
+}
+
 .navbar.navbar-transparent {
     padding-top: 0;
 }
@@ -19,51 +25,12 @@
     }
 }
 
-
 // Change the icon and nav link
 .navbar-transparent .navbar-nav .nav-item .nav-link:not(.btn), [class*="bg"] .navbar-nav .nav-item .nav-link:not(.btn) {
     color: @black-title;
-    border-bottom: 2px solid transparent;
+    border: 2px solid transparent;
     &:hover {
-        border-bottom: 2px solid @accent-color;
-    }
-}
-
-// adjusting the padding of the brand
-.navbar .navbar-brand {
-    padding: 10px 15px;
-    opacity: 1;
-    &:hover {
-        color: @black-title;
-    }
-
-    .logo-text {
-
-      img {
-        width: 100%;
-        max-width: 175px;
-        position: absolute;
-        top: 10px;
-        // Transition the shrinking effect to make is smoother!
-        webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-      }
-      .shrink {
-        width: 100%;
-        max-width: 100px;
-        position: relative;
-        top: 0;
-      }
-    }
-
-    .camera-icon {
-
-        i {
-            font-size: 36px;
-        }
+        border: 2px solid @accent-color;
     }
 }
 
@@ -74,14 +41,12 @@
 // For when the bar is fixed while scrolling
 .navbar .navbar-nav .nav-item .nav-link {
     color: @black-title;
-    border-bottom: 2px solid transparent;
-
+    border: 2px solid transparent;
+    
     &:hover {
-        border-bottom: 2px solid @accent-color;
+        border: 2px solid @accent-color;
     }
 }
-// Adjusting the mobile hamburger display
-
 .icon {
     font-size: 2em;
     .nav-link {
@@ -90,7 +55,7 @@
     .facebook {
         &:hover {
             color:#3B5998 !important;
-        }
+        } 
     }
     .instagram {
         &:hover {
