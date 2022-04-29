@@ -812,7 +812,7 @@
 			limit: 0,
 			padding: 0,
 			animate: true,
-			animationDuration: 500,
+			animationDuration: 300,
 			ariaFormat: defaultFormatter,
 			format: defaultFormatter
 		};
